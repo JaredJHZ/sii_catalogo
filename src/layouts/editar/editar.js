@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import { Form , Button} from 'react-bootstrap';
 import {Redirect} from 'react-router-dom';
+import './editar.css';
 
 class Editar extends Component {
 
@@ -168,7 +169,7 @@ class Editar extends Component {
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>
-                                Gráfica
+                                Gráfica de evaluación departamental
                             </Form.Label>
                             <Form.Control name="grafica" onChange={
                                 (event) => this.props.upload(this.file3, event.target.name)

@@ -19,13 +19,6 @@ body {
   width: 100%;
 }
 
-.login {
-  margin-top: 10%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .half {
   width: 50%;
   height: 50%;
@@ -34,16 +27,6 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-.home {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: center;
-  height: 80vh;
-  align-items: center;
-
 }
 
 .header {
@@ -57,3 +40,4 @@ body {
 .buttons button {
   margin: 5px;
 }
+

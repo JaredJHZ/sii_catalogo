@@ -4,7 +4,7 @@ import {Navbar, Col, Row, Container} from 'react-bootstrap';
 let navbar = (props) => {
 
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar  className="custom-color">
       <Container fluid>
       <Row className="full">
 

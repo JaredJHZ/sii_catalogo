@@ -1,0 +1,21 @@
+.search {
+    margin: 30px;
+  }
+  
+.search input{
+    padding: 2px;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.isNotEmpty input {
+    animation-name: changeColor;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+.lista-maestros {
+    padding: 30px;
+}

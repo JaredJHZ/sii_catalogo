@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import '../menu/menu.css';
 
 let customName = (name) => {
     let firstLetter = name[0].toUpperCase();
@@ -13,10 +14,14 @@ let item = (props) => {
         (value) =><li  key={value} className="link"><NavLink to={value} className="pointer">{customName(value)}</NavLink></li> 
     )
 
+    let close_session = props.logged ? <li key="logout" className="link"><a onClick={props.logout}>Cerrar Sesión</a></li> : null  ;
+
+    items = props.logged ? items : null;
+
     return (
         <ul>
             {items}
-            <li  onClick={props.logout} key="logout" className="link pointer">Cerrar Sesión</li>
+            {close_session}
         </ul>
     )
 }

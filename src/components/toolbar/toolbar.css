@@ -1,0 +1,44 @@
+
+.toolbar {
+    width: 100%;
+    display: flex;
+    padding: 5px !important;
+    background: white;
+    height: 8vh !important;
+    border-bottom: 2px #010C5E solid;
+  }
+
+
+  .logo1 {
+    width: 100px !important;
+  }
+  
+  .logo2 {
+    width: 80px !important;
+  }
+  
+  .logo3{
+    width: 200px !important;
+  }
+  
+  
+  .custom-color {
+    background: #010C5E !important;
+  }
+
+  
+.col-4 {
+  height: 100% !important;
+}
+
+.toolbar img {
+  width: 50%;
+  height: 100%;
+
+}
+
+.row {
+  margin: 0 !important;
+  padding: 0;
+}
+

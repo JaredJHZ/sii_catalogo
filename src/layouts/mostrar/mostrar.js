@@ -69,7 +69,7 @@ class Mostrar extends Component {
                     <header><h3>{`${this.state.maestro.apellido_paterno + ' ' +this.state.maestro.apellido_materno + ' '+this.state.maestro.nombre }`}</h3></header>
                     <div className="custom-card-profile">
                         <Card>
-                            <Card.Title><h5>Información dxl maestro</h5></Card.Title>
+                            <Card.Title><h5>Información del maestro</h5></Card.Title>
                             <Card.Body>
                                 <p>Grado de escolaridad: {this.state.maestro.grado_escolaridad}</p>
                                 <ul className="profile">

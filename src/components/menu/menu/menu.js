@@ -1,5 +1,6 @@
 import React from 'react';
 import Items from '../menu-items/items';
+import './menu.css';
 let menu = (props) => {
 
     let attachedClasses = ["sidedraw", "close"];
@@ -10,7 +11,7 @@ let menu = (props) => {
 
     return (
         <div className={attachedClasses.join(' ')}>
-            <Items logout={props.logout} items={props.items} />
+            <Items logged={props.logged} logout={props.logout} items={props.items} />
         </div>
     )
 };

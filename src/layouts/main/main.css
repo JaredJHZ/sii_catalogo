@@ -1,0 +1,9 @@
+.home {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    height: 80vh;
+    align-items: center;
+
+  }

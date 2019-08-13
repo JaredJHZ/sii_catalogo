@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container, Button, Card , Form, Alert} from 'react-bootstrap';
+import './login.css';
 
 let login = (props) => {
 
@@ -10,7 +11,9 @@ let login = (props) => {
     return (
         <Container className="login">
            <Card className="login-form">
-               <Card.Title>Login del catalogo</Card.Title>
+               <Card.Title>
+                   <h3>Login del catálogo</h3>
+               </Card.Title>
                <Card.Body>
                         <Form>
                             <Form.Group controlId="formBasicEmail">

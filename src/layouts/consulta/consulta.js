@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import {Table, Button} from 'react-bootstrap';
 import { withRouter } from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
+import './consulta.css';
 
 class Consultar extends Component {
 
     maestros = this.props.maestros;
     maestrosRenderizados;
     aux;
+
 
     state = {
         buscador:'',
@@ -15,14 +18,6 @@ class Consultar extends Component {
 
     constructor(props) {
         super(props);
-        console.log(props);
-    }
-
-
-    componentDidMount() {
-
- 
-    
     }
 
     onClickHandler(maestro) {
@@ -84,6 +79,8 @@ class Consultar extends Component {
 
 
     render() {
+        
+        let login = this.props.logged  ? null : <Redirect to="/" />
 
         if(!this.state.activo) {
             this.maestros = this.props.maestros;
@@ -103,8 +100,9 @@ class Consultar extends Component {
                             <td>{valor.data.nombre}</td>
                             <td>
                                 <div className="buttons">
-                                    <Button onClick={() => this.onClickHandler(valor)}  >Editar</Button>
-                                    <Button onClick={() => this.onMostrarHandler(valor) } variant="success">Mostrar</Button>
+                                    <Button disabled={valor.data.materias} onClick={() => this.onClickHandler(valor)}  >Completar perfil</Button>
+                                    <Button disabled={!valor.data.materias} onClick={() => this.onMostrarHandler(valor) } variant="success">Mostrar</Button>
+                                    <Button onClick={() => this.props.deleteTeacher(valor.id) } variant="danger">Eliminar</Button>
                                 </div>
                             </td>
                         </tr>
@@ -123,6 +121,7 @@ class Consultar extends Component {
 
         return (
             <div>
+                {login}
                 <header>
                     <h3>Consultar informacion del maestro</h3>
                 </header>
